@@ -1,0 +1,18 @@
+{
+  "name": "ai-self-healing-qa-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo project for AI-assisted self-healing test automation.",
+  "scripts": {
+    "start": "vite app --host 127.0.0.1 --port 4173",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "heal": "node tools/self-heal.js",
+    "reset:broken": "node tools/reset-broken-test.js",
+    "demo": "npm run test || npm run heal"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "vite": "^6.0.0"
+  }
+}

@@ -1,6 +1,7 @@
 # AI Self-Healing QA Demo
 
-This project demonstrates a broken Playwright test and a simple self-healing bot that repairs the locator.
+A simple Playwright demo showing how an AI-assisted self-healing workflow can detect and update a broken locator.
+
 
 ## Commands
 
